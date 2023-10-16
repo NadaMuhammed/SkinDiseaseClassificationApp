@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav3"
+    app:startDestination="@id/drChatFragment">
+
+    <fragment
+        android:id="@+id/messagesFragment2"
+        android:name="com.example.gp.chat.MessagesFragment"
+        android:label="fragment_messages"
+        tools:layout="@layout/fragment_messages" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="uid"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment2"
+        android:name="com.example.gp.settings.SettingsFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/drChatFragment"
+        android:name="com.example.gp.doctor.DrChatFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_dr_chat">
+        <action
+            android:id="@+id/action_drChatFragment_to_messagesFragment2"
+            app:destination="@id/messagesFragment2" />
+    </fragment>
+</navigation>

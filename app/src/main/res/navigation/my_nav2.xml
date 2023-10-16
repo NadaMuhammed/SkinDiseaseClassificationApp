@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav2"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.gp.list.listFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_listFragment_to_diseaseFragment"
+            app:destination="@id/diseaseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diseaseFragment"
+        android:name="com.example.gp.list.DiseaseFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_disease">
+        <argument
+            android:name="disease"
+            app:argType="com.example.gp.list.Disease" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.gp.chat.ChatFragment"
+        android:label="Ask"
+        tools:layout="@layout/fragment_chat">
+        <action
+            android:id="@+id/action_chatFragment_to_messagesFragment"
+            app:destination="@id/messagesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.gp.settings.SettingsFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_settingsFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newScanFragment"
+        android:name="com.example.gp.newscan.NewScanFragment"
+        android:label="Scan"
+        tools:layout="@layout/fragment_new_scan" />
+    <fragment
+        android:id="@+id/messagesFragment"
+        android:name="com.example.gp.chat.MessagesFragment"
+        android:label="fragment_messages"
+        tools:layout="@layout/fragment_messages" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="uid"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.gp.settings.EditProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_edit_profile">
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_editProfileFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/welcome" />
+
+    <TextView
+        android:id="@+id/welcome_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="    Skin Disease\nClassification App"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+<!--    <Button-->
+<!--        android:id="@+id/patientLogin_btn"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="65dp"-->
+<!--        android:layout_below="@+id/welcome_txt"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="300dp"-->
+<!--        android:backgroundTint="#6495ED"-->
+<!--        android:text="Login as a patient"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:fontFamily="sans-serif-medium"-->
+<!--        android:textSize="17dp"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/doctorLogin_btn"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="65dp"-->
+<!--        android:layout_below="@+id/patientLogin_btn"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="3dp"-->
+<!--        android:backgroundTint="#6495ED"-->
+<!--        android:text="Login as a doctor"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:fontFamily="sans-serif-medium"-->
+<!--        android:textSize="17dp"/>-->
+
+</RelativeLayout>

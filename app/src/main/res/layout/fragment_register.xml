@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myCoordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register.RegisterFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/profile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/firstName_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/image"
+                android:text="First Name"
+                android:textColor="#808080"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/firstname_et"
+                android:layout_width="180dp"
+                android:layout_height="55dp"
+                android:layout_below="@+id/firstName_txt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittextstyle"
+                android:hint="Enter your first name"
+                android:paddingLeft="15dp" />
+
+            <TextView
+                android:id="@+id/lastName_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_below="@+id/image"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@+id/firstName_txt"
+                android:text="Last Name"
+                android:textColor="#808080"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/lastname_et"
+                android:layout_width="180dp"
+                android:layout_height="55dp"
+                android:layout_below="@+id/lastName_txt"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/firstname_et"
+                android:background="@drawable/edittextstyle"
+                android:hint="Enter your last\n name"
+                android:paddingLeft="15dp" />
+
+            <TextView
+                android:id="@+id/gender_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstname_et"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:text="Gender"
+                android:textColor="#808080"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gender_txt"
+                android:layout_marginLeft="25dp">
+
+                <RadioButton
+                    android:id="@+id/genderFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textColor="#808080"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/genderMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textColor="#808080"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+            <TextView
+                android:id="@+id/type_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gender"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:text="Type"
+                android:textColor="#808080"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/type_txt"
+                android:layout_marginLeft="25dp">
+
+                <RadioButton
+                    android:id="@+id/typeDoctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Doctor"
+                    android:textColor="#808080"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/typePatient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Patient"
+                    android:textColor="#808080"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/username_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/type"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:text="Username"
+                android:textColor="#808080"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/username_et"
+                android:layout_width="370dp"
+                android:layout_height="55dp"
+                android:layout_below="@+id/username_txt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittextstyle"
+                android:hint="Enter your username"
+                android:paddingLeft="15dp" />
+
+            <TextView
+                android:id="@+id/email_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username_et"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:text="Email"
+                android:textColor="#808080"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/email_et"
+                android:layout_width="370dp"
+                android:layout_height="55dp"
+                android:layout_below="@+id/email_txt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittextstyle"
+                android:hint="Enter your Email"
+                android:paddingLeft="15dp" />
+
+            <TextView
+                android:id="@+id/password_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email_et"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:text="Password"
+                android:textColor="#808080"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/password_et"
+                android:layout_width="370dp"
+                android:layout_height="55dp"
+                android:layout_below="@+id/password_txt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittextstyle"
+                android:hint="Enter your password"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp" />
+
+            <TextView
+                android:id="@+id/passwordConfirmation_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password_et"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:text="Re-enter your Password"
+                android:textColor="#808080"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/passwordConfirmation_et"
+                android:layout_width="370dp"
+                android:layout_height="55dp"
+                android:layout_below="@+id/passwordConfirmation_txt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittextstyle"
+                android:hint="Enter your password"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp" />
+
+
+            <Button
+                android:id="@+id/signUp_btn"
+                android:layout_width="370dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/passwordConfirmation_et"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="90dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#6495ED"
+                android:text="Sign Up"
+                android:textColor="@color/black" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

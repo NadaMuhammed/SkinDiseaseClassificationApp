@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newscan.NewScanFragment">
+
+
+    <TextView
+        android:id="@+id/uploadText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You need to upload your \n           skin image"
+        android:textSize="23sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="250dp"
+        />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/add_img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/placeholder"
+        android:layout_marginTop="30dp"/>
+
+
+    <Button
+        android:id="@+id/openCamera_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:drawableLeft="@drawable/ic_baseline_photo_camera_24"
+        android:text="Open Camera"
+        android:textAllCaps="false"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#6495ED"
+        android:layout_below="@id/uploadText"
+        android:layout_marginTop="40dp"/>
+
+
+    <Button
+        android:id="@+id/browseFiles_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:drawableLeft="@drawable/ic_baseline_collections_24"
+        android:text="Browse Files"
+        android:layout_toRightOf="@id/openCamera_btn"
+        android:layout_below="@+id/uploadText"
+        android:layout_marginLeft="20dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:backgroundTint="#6495ED"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_img"
+        android:layout_marginTop="230dp"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="23sp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:id="@+id/scanBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#6495ED"
+        android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+        android:text="scan"
+        android:textColor="@color/black" />
+
+
+
+
+</RelativeLayout>
